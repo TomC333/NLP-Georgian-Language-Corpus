@@ -17,14 +17,4 @@ While the filters used in this code aren’t top-tier, they serve as a reference
 The resulting corpus is publicly available on Hugging Face:  
 👉 [Hugging Face Dataset Link](https://huggingface.co/datasets/TomC333/georgian-language-corpus)  
 
-It's not massive, and it's definitely not perfect — but it’s a starting point.
-
-## Setup & Usage ⚙️
-
-To run this project locally:
-
-```bash
-git clone https://github.com/Toms343/NLP-Georgian-Language-Corpus.git
-cd NLP-Georgian-Language-Corpus
-pip install -r requirements.txt
-python crawl.py
+It's not massive, and it's definitely not even close to perfect language corpus — but it’s a starting point.
