@@ -192,8 +192,17 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-
+ 
 .DS_Store
 
+# ignores to avoid having common crawler data on github
 index_files/
 cc-index-table.paths.gz
+
+possibly_georgian_urls.txt 	
+extracted_texts/
+
+corpus.jsonl
+possibly_georgian_urls.txt
+
+
