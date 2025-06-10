@@ -1,11 +1,9 @@
 import json
 from collections import Counter
 
-# ამ დიაპაზონში არიან ქართული ასოები (Unicode)
 def is_georgian_char(ch):
     return '\u10A0' <= ch <= '\u10FF'
 
-# .jsonl ფაილის მდებარეობა
 jsonl_file = "corpus.jsonl"
 
 char_counter = Counter()
@@ -25,7 +23,6 @@ with open(jsonl_file, "r", encoding="utf-8") as f:
         except json.JSONDecodeError:
             continue
 
-# ასოები გამოჩენის რაოდენობის მიხედვით კლებადობით
 sorted_chars = char_counter.most_common()
 
 print(f"Processed {total_lines} lines with {total_chars} Georgian characters.\n")
