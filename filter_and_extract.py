@@ -79,7 +79,7 @@ with open(output_jsonl, "w", encoding="utf-8") as out_f:
         minhashes[key] = mh
 
         for sentence in sentences:
-            if is_georgian(sentence):  # წინადადების დონეზეც გადავამოწმოთ
+            if is_georgian(sentence):
                 out_f.write(json.dumps({"text": sentence}, ensure_ascii=False) + "\n")
                 stats["kept"] += 1
 
